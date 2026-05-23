@@ -5,8 +5,8 @@ export default function HomeScreen() {
   const router = useRouter();
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text style={{ color: '#ffffffff' }}> Hello, this will be a test of my app.</Text>
-      <Button onPress={() => router.push('/dashboard')} title="Click Me" />
+      <Text style={{ color: '#ffffffff' }}> Momentum.</Text>
+      <Button onPress={() => router.push('/dashboard')} title="Begin" />
     </View>
   );
 }
