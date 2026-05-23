@@ -1,10 +1,12 @@
 import { Button, Text, View } from 'react-native';
+import { useRouter } from 'expo-router';
 
 export default function HomeScreen() {
+  const router = useRouter();
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text style={{ color: '#ffffffff' }}> Hello, this will be a test of my app.</Text>
-      <Button onPress={() => alert('Hello, this will be a test of my app.')} title="Click Me" />
+      <Button onPress={() => router.push('/dashboard')} title="Click Me" />
     </View>
   );
 }
