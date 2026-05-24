@@ -5,7 +5,7 @@ export default function HomeScreen() {
   const router = useRouter();
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text style={{ color: '#ffffffff' }}> Momentum.</Text>
+      <Text style={{ color: '#ffffffff' }}> Welcome to Momentum.</Text>
       <TouchableOpacity 
         style={styles.squareButton} 
         onPress={() => router.push('/dashboard')}
@@ -19,10 +19,12 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   squareButton: {
     width: 100,
-    height: 100,
+    height: 50,
+    borderRadius: 5,
     backgroundColor: '#007bff',
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop: 50,
   },
   buttonText: {
     color: '#ffffff',
